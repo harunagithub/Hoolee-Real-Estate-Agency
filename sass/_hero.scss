@@ -8,19 +8,13 @@
 
     @media screen and (min-width: 768px) {
 	    background-position: 118px 0;
-        
     }
-
     @media screen and (min-width: 1024px) {
 	    background-position: 166px 0;
-        
     }
-
-
     @media screen and (min-width: 1366px) {
         background-position: 207px 0;
     }
-
 	.hero-container {
 		display: flex;
 		justify-content: center;
@@ -84,7 +78,7 @@
         }
 
         @media screen and (min-width: 1366px) {
-            padding: 0% 29%;
+            padding: 0% 10%;
         }
 	}
 
