@@ -1,0 +1,52 @@
+header{
+    .header-telephone, hr {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: grey;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+              }
+        }
+    }
+    .logo {
+        width: 100%;
+        max-width: 142px;
+    }
+
+    .hero-logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+
+        .hamburger{
+            @media screen and (min-width: 768px) {
+                display: none;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .hero-wrapper {
+        padding: 20px 0;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}

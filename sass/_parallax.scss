@@ -1,0 +1,78 @@
+.form-paralax {
+  min-height: 500px;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg-one.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 13px;
+
+.form-paralax-container {
+  background-color: #fff;
+  min-height: inherit;
+  padding: 49px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 80px;
+  min-height: fit-content;
+
+
+  @media screen and (min-width: 768px) {
+   max-width: 500px;
+    
+  }
+
+  .form-parallax-title {
+    line-height: 0.9;
+    margin-bottom: 54px;
+    padding: 12px;
+    font-size: 35px;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: $fontFamily;
+
+    @media screen and (min-width: 768px) {
+      font-size: 50px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: grey;
+      width: 50px;
+      height: 2px;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 30px;
+    }
+  }
+}
+
+.form-paralax-container input {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  width: 100%;
+  background-color: #fff5f5;
+}
+
+.form-paralax-container .input-wrapper {
+  display: flex;
+  gap: 5px;
+}
+.form-paralax-container .input-wrapper .input-col {
+  width: 100%;
+}
+
+.gap {
+  height: 200px;
+}
+textarea {
+  width: 100%;
+}
+}

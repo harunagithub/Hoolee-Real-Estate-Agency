@@ -1,0 +1,24 @@
+.nav{
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 36px;
+
+        .nav-item {
+            list-style-type: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000;
+            font-weight: 900;
+        }
+    }
+   
+    
+}

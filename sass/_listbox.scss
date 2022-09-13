@@ -1,0 +1,76 @@
+.listings{
+
+    .list-wrapper{
+        padding: 125px 0 100px;
+    }
+    .listing-title{
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        line-height: 37px;
+        font-family: $fontFamily;
+        position: relative;
+        display: block;
+
+        @media screen and (min-width: 768px) {
+            font-size: 50px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 65px;
+          }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: grey;
+            width: 50px;
+            height: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 59px;
+          }
+    }
+
+    .listing-inner-wrapper {
+        text-align: center;
+        margin-top: 37px;
+
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+        }
+
+        .list-box {
+            margin-bottom: 43px;
+
+            @media screen and (min-width: 768px) {
+                padding: 12px;
+            }
+
+            .list-box-title{
+                text-align: left;
+                font-size: 19px;
+                font-family: $fontFamily;
+                line-height: 1.5;
+                margin-bottom: 23px;
+            }
+            .list-box-price{
+                text-align: left;
+                font-family: $fontFamily2;
+                color: darkcyan;
+                font-size: 13px;
+            }
+          }
+        
+      }
+      
+    } 
+   

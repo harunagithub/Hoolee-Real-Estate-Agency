@@ -1,2 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import './variable';
+@import './reset';
+@import './header';
 @import './hero';
 @import './nav';
+@import './button';
+@import './about';
+@import './service';
+@import './parallax';
+@import './customers';
+@import './body';
+@import './listbox';
+@import './footer';
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $fontFamily;
+}

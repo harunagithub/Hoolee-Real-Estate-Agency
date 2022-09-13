@@ -1,0 +1,94 @@
+.services{
+  margin-bottom: 100px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 139px;
+  }
+    .service-wrapper {
+        margin-top: 40px;
+        
+        @media screen and (min-width: 768px) {
+          display: flex;
+          margin-top: 135px;
+        }
+
+        .service-col-right{
+
+          @media screen and (min-width: 768px) {
+            padding: 0 30px;
+          }
+        }
+        .service-col-left {
+
+          @media screen and (min-width: 768px) {
+            padding: 0 30px;
+            
+          }
+        }
+        
+        .service-title{
+            margin-bottom: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            display: block;
+            position: relative;
+
+            @media screen and (min-width: 768px) {
+              line-height: 1.2;
+              font-size: 50px;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              background-color: grey;
+              width: 50px;
+              height: 2px;
+              bottom: -8px;
+              left: 0;
+            }
+        }
+        .service-item-title {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: $fontFamily;
+          }
+          .service-list {
+            list-style-type: none;
+
+            @media screen and (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 50% 50%;
+              }
+        }
+
+          .service-item, p {
+            margin-bottom: 22px;
+            font-family: $fontFamily2;
+            font-size: 13px;
+            padding-right: 19px;
+
+            @media screen and(min-width: 768px) {
+            margin-bottom: 22px;
+              
+            }
+          }
+          .service-read {
+            background: none;
+            border: none;
+            font-size: 10px;
+            font-weight: bold;
+            color: grey;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: $fontFamily2;
+            font-weight: 700;
+
+            &:hover{
+                color: #000;
+                transition: 0.5s ease-in-out;
+            }
+          }
+      }
+
+}

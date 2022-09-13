@@ -1,0 +1,48 @@
+.btnfree{
+
+    @media screen and (min-width: 768px) {
+        padding: 30px 0 0;
+    }
+
+    @media screen and (min-width: 1366px) {
+        padding: 30px 0 0;
+    }
+}
+
+.hero-btn{
+    padding: 18px 30px;
+    background: $background1;
+    color: $Color1;
+    border: none;
+    margin-top: 16px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:hover{
+        background: $background2;
+        color: $Color2;
+    }
+}
+
+.form-parallax-btn {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background: gray;
+    padding: 19px 41px;
+    border: none;
+    cursor: pointer;
+    font-family: $fontFamily2;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover{
+        color:$Color2;
+        background: #000;
+    }
+  }
+
