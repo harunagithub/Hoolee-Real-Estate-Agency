@@ -47,10 +47,72 @@
     }
   }
 
-  .contact-icon-item {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  // .contact-icon-item {
+  //   align-items: center;
+
+  //   @media screen and (min-width: 768px) {
+  //     display: flex;
+  //     gap: 20px;
+  //   }
+
+  //   .contact-icon-list {
+  //     text-align: center;
+  //   }
+  //   .contact-icon {
+  //     border: 1px solid gray;
+  //     padding: 15px;
+  //     border-radius: 32px;
+  //     color: $Color4;
+  //   }
+  //   .contact-icon-title {
+  //     margin-top: 8px;
+  //     font-size: 18px;
+  //     font-weight: 400;
+  //   }
+  // }
+  .contact-icon-list {
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+      text-align: left;
+    }
+
+    .contact-icon-item {
+      margin-bottom: 27px;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+      }
+    }
+    .contact-icon {
+      margin-bottom: 15px;
+      border: 1px solid gray;
+      border-radius: 100%;
+      padding: 15px;
+      color: $Color3;
+    }
+    .contact-icon-caption {
+      font-size: 13px;
+      font-weight: 400;
+      font-family: $fontFamily2;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 15px;
+      }
+    }
+    .contact-icon-title {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1;
+      font-family: $fontFamily;
+
+      @media screen and (min-width: 1366px) {
+        font-size: 20px;
+      }
+    }
   }
 .contactform-wrap{
     background-color: rgba(250, 250, 250, 0.518);
@@ -85,26 +147,6 @@
     }
 
 }
-.contact-icon-item {
-    text-align: center;
-
-    @media screen and (min-width: 768px) {
-        line-height: 1;
-        text-align: left;
-    }
-
-    .contact-icon {
-        border: 1px solid gray;
-        padding: 15px;
-        border-radius: 32px;
-        color: $Color4;
-      }
-      .contact-icon-title {
-        margin-top: 8px;
-        font-size: 18px;
-        font-weight: 400;
-      }
-  }
 
   .textarea-contact{
     padding: 15px;

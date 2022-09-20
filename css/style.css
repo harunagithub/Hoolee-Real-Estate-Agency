@@ -1402,14 +1402,63 @@ header .hero-wrapper {
   }
 }
 
-.contacts .contact-icon-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contacts .contact-icon-list {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .contact-icon-list {
+    text-align: left;
+  }
+}
+
+.contacts .contact-icon-list .contact-icon-item {
+  margin-bottom: 27px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .contact-icon-list .contact-icon-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+  }
+}
+
+.contacts .contact-icon-list .contact-icon {
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 15px;
+  color: #1a9395;
+}
+
+.contacts .contact-icon-list .contact-icon-caption {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts .contact-icon-list .contact-icon-caption {
+    font-size: 15px;
+  }
+}
+
+.contacts .contact-icon-list .contact-icon-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Yeseva One", cursive;
+}
+
+@media screen and (min-width: 1366px) {
+  .contacts .contact-icon-list .contact-icon-title {
+    font-size: 20px;
+  }
 }
 
 .contacts .contactform-wrap {
@@ -1449,30 +1498,6 @@ header .hero-wrapper {
   margin-bottom: 17px;
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
-}
-
-.contacts .contact-icon-item {
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts .contact-icon-item {
-    line-height: 1;
-    text-align: left;
-  }
-}
-
-.contacts .contact-icon-item .contact-icon {
-  border: 1px solid gray;
-  padding: 15px;
-  border-radius: 32px;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.contacts .contact-icon-item .contact-icon-title {
-  margin-top: 8px;
-  font-size: 18px;
-  font-weight: 400;
 }
 
 .contacts .textarea-contact {
