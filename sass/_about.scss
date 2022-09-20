@@ -1,22 +1,30 @@
 .about {
   @media screen and (min-width: 768px) {
     width: 100%;
-    background-image: url("../images/hero-bg-two.png");
+    background-image: url("../images/taf-two.JPG");
     background-repeat: no-repeat;
-    background-position: -287px 0;
+    background-position: 372px 0;
     background-size: cover;
     margin-top: -87px;
   }
 
+  @media screen and (min-width: 1024px) {
+    background-position: 466px 0;
+    height: 136vh;
+    
+  }
+
   @media screen and (min-width: 1366px) {
-    width: 100%;
-    background-position: -14px 0;
+    background-position: 649px 0;
+    height: 145vh;
     
   }
 
   @media screen and (min-width: 1400px) {
     width: 100%;
-    background-position: 0;
+    background-position: 800px 0;
+    height: 100vh;
+
     
   }
 

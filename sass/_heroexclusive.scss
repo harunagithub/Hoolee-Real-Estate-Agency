@@ -1,0 +1,111 @@
+.hero-exclusives{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-exclusive.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    margin-bottom: 70px;
+    background-attachment: fixed;
+
+
+    .hero-exlusive-warpper {
+        padding: 122px 0;
+        text-align: center;
+        // position: absolute;
+        // top: 40%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+      }
+      .hero-exclusive-title {
+        color: #fff;
+        font-size: 33px;
+        line-height: 1;
+        font-family: $fontFamily;
+
+        @media screen and (min-width:768px) {
+          font-size: 60px;
+          
+        }
+        @media screen and (min-width:992px) {
+          font-size: 90px;
+          
+        }
+      }
+}
+
+.exclusive{
+  margin-bottom: 55px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.exclusive-list{
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.exclusive-item {
+  @media screen and (min-width: 768px) {
+    padding: 6px;
+    flex: 1;
+  }
+
+}
+.exclusive-list-icon{
+  position: relative;
+  display: block;
+
+  &::after {
+
+    @media screen and (min-width: 768px) {
+      width: 96%;
+    }
+    content: "";
+    position: absolute;
+    background-color:#00000014;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.exclusive-item-title {
+        font-size: 23px;
+        line-height: 1.2;
+        font-weight: 400;
+        font-family: $fontFamily;
+
+        @media screen and (min-width: 768px){
+          font-size: 18px;
+        }
+        @media screen and (min-width: 1024px){
+          font-size: 20px;
+        }
+      }
+      .exclusiveitem-price {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: $fontFamily2;
+        color: $Color3;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+      }
+
+      .exclusive-list-icon {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 55px;
+
+        @media screen and (min-width: 768px) {
+          
+        }
+
+        .exclusive-icon-item {
+          color: gray;
+        }
+      }

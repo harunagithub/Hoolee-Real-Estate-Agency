@@ -1,6 +1,129 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.hero-exclusives {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/hero-exclusive.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-exclusive.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 70px;
+  background-attachment: fixed;
+}
+
+.hero-exclusives .hero-exlusive-warpper {
+  padding: 122px 0;
+  text-align: center;
+}
+
+.hero-exclusives .hero-exclusive-title {
+  color: #fff;
+  font-size: 33px;
+  line-height: 1;
+  font-family: "Yeseva One", cursive;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-exclusives .hero-exclusive-title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-exclusives .hero-exclusive-title {
+    font-size: 90px;
+  }
+}
+
+.exclusive {
+  margin-bottom: 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .exclusive {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exclusive-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exclusive-item {
+    padding: 6px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.exclusive-list-icon {
+  position: relative;
+  display: block;
+}
+
+.exclusive-list-icon::after {
+  content: "";
+  position: absolute;
+  background-color: #00000014;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .exclusive-list-icon::after {
+    width: 96%;
+  }
+}
+
+.exclusive-item-title {
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+}
+
+@media screen and (min-width: 768px) {
+  .exclusive-item-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .exclusive-item-title {
+    font-size: 20px;
+  }
+}
+
+.exclusiveitem-price {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #1a9395;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.exclusive-list-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 55px;
+}
+
+.exclusive-list-icon .exclusive-icon-item {
+  color: gray;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -79,12 +202,12 @@ ul {
   margin: 0;
 }
 
-header .header-telephone, header hr {
+header .header-telephone {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header .header-telephone, header hr {
+  header .header-telephone {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,7 +219,7 @@ header .header-telephone, header hr {
             align-items: center;
     position: relative;
   }
-  header .header-telephone::after, header hr::after {
+  header .header-telephone::after {
     content: "";
     position: absolute;
     background-color: grey;
@@ -152,11 +275,12 @@ header .hero-wrapper {
 
 .hero {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://websitedemos.net/real-estate-agency-04/wp-content/uploads/sites/867/2021/05/hero-01-free-img.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://websitedemos.net/real-estate-agency-04/wp-content/uploads/sites/867/2021/05/hero-01-free-img.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/taf-one.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/taf-one.jpg");
   background-repeat: no-repeat;
   background-position: 49px 0;
   background-size: cover;
+  margin-top: -22px;
 }
 
 @media screen and (min-width: 768px) {
@@ -346,25 +470,33 @@ header .hero-wrapper {
 @media screen and (min-width: 768px) {
   .about {
     width: 100%;
-    background-image: url("../images/hero-bg-two.png");
+    background-image: url("../images/taf-two.JPG");
     background-repeat: no-repeat;
-    background-position: -287px 0;
+    background-position: 372px 0;
     background-size: cover;
     margin-top: -87px;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .about {
+    background-position: 466px 0;
+    height: 136vh;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .about {
-    width: 100%;
-    background-position: -14px 0;
+    background-position: 649px 0;
+    height: 145vh;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .about {
     width: 100%;
-    background-position: 0;
+    background-position: 800px 0;
+    height: 100vh;
   }
 }
 
@@ -460,12 +592,12 @@ header .hero-wrapper {
 }
 
 .services {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 @media screen and (min-width: 768px) {
   .services {
-    margin-bottom: 139px;
+    margin-bottom: 95px;
   }
 }
 
@@ -571,8 +703,8 @@ header .hero-wrapper {
 
 .form-paralax {
   min-height: 500px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/hero-bg-one.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-bg-one.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/taf-one.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/taf-one.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -687,6 +819,7 @@ header .hero-wrapper {
 @media screen and (min-width: 1024px) {
   .customers .customers-wrapper .customer-title {
     font-size: 65px;
+    padding: 0 25%;
   }
 }
 
@@ -751,6 +884,618 @@ header .hero-wrapper {
     -ms-grid-columns: 33.33% 33.33% 33.33%;
         grid-template-columns: 33.33% 33.33% 33.33%;
   }
+}
+
+.hero-rentals {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/ex-4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ex-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 70px;
+  background-attachment: fixed;
+}
+
+.hero-luxury {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/hero-exclusive.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-exclusive.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 70px;
+  background-attachment: fixed;
+}
+
+.hero-neighborhood {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/neighborhood-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/neighborhood-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 70px;
+  background-attachment: fixed;
+}
+
+.neighborhoods {
+  margin-bottom: 75px;
+}
+
+@media screen and (min-width: 768px) {
+  .neighborhood-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.neighborhood-list .neihborhood-item {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/listing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/listing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 11px;
+  text-align: center;
+  padding: 100px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.neighborhood-list .neihborhood-item:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/listing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/listing.jpg");
+  cursor: pointer;
+}
+
+.neighborhood-list .neighborhood-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Yeseva One", cursive;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .neighborhood-list .neighborhood-link {
+    font-size: 20px;
+  }
+}
+
+.hero-about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/about-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/about-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 70px;
+  background-attachment: fixed;
+}
+
+.about-contents .aboutpage-title {
+  text-align: center;
+  font-size: 35px;
+  line-height: 1;
+  font-family: "Yeseva One", cursive;
+  display: block;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.about-contents .aboutpage-title::after {
+  content: "";
+  position: absolute;
+  background-color: grey;
+  width: 50px;
+  height: 2px;
+  bottom: -17px;
+  left: 100px;
+}
+
+.unparalleled {
+  margin-bottom: 75px;
+}
+
+@media screen and (min-width: 768px) {
+  .unparalleled .unparalleled-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1;
+    gap: 94px;
+  }
+}
+
+.unparalleled .unparalleled-container .unparalleled-column-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.unparalleled .unparalleled-container .unparalleled-title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 18px;
+}
+
+.unparalleled .unparalleled-container .unparalleled-bold-caption {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.unparalleled .unparalleled-container .unparalleled-normal-caption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.unparalleled .unparalleled-container .broker-title {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 10px;
+}
+
+.unparalleled .unparalleled-container .broker-caption {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.about-parallax {
+  min-height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/about-parallax.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/about-parallax.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 13px;
+  margin-bottom: 50px;
+}
+
+.about-parallax-list {
+  margin-top: 54px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-parallax-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-parallax-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+.about-parallax-span {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "Yeseva One", cursive;
+  line-height: 1;
+}
+
+.about-parallax-text {
+  color: #fff;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.about-parallax-item {
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.about-parallax-item::after {
+  content: "";
+  position: absolute;
+  background-color: grey;
+  width: 51px;
+  height: 3px;
+  bottom: 117px;
+}
+
+.aboutpage-second-parallax {
+  min-height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/hero-bg-one.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg-one.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 13px;
+  margin-bottom: 70px;
+}
+
+.records .record-sales-title {
+  font-size: 35px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  color: #1a9395;
+  margin-bottom: 112px;
+  display: block;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .records .record-sales-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .records .record-sales-title {
+    font-size: 65px;
+  }
+}
+
+.records .record-sales-title::after {
+  content: "";
+  position: absolute;
+  background-color: #1a9395;
+  width: 100%;
+  height: 1px;
+  bottom: -60px;
+  left: 0;
+}
+
+.establishes {
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .establishes .established-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 28px;
+  }
+}
+
+.establishes .established-content-wrapper .established-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.establishes .established-title {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .establishes .established-title {
+    width: 80%;
+  }
+}
+
+.establishes .estbalished-caption {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  padding: 10px 0;
+}
+
+.main-bg-color {
+  background-color: #fdf2f2;
+}
+
+.main-bg-color .blog-column-min-height {
+  height: 395px;
+}
+
+.blog-post-header-wrapper {
+  background-color: #fff;
+}
+
+.blog-post {
+  margin-top: -39px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-post .blog-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog-post .blog-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.blog-post .blog-main .blog-column {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #fff;
+  padding: 13px 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-post .blog-main .blog-column {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog-post .blog-main .blog-column .blog-img {
+    width: 100%;
+  }
+}
+
+.blog-post .blog-main .blog-column .search-box-bg {
+  background-color: #fff;
+  padding: 13px 13px;
+}
+
+.blog-post .blog-main .blog-column .blog-right-content {
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.blog-post .blog-main .blog-column .blog-right-content::after {
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  width: 100%;
+  height: 1px;
+  bottom: -16px;
+  left: 0;
+}
+
+.blog-post .blog-main .blog-img-caption {
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-top: 13px;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+}
+
+.blog-post .blog-main .blog-caption {
+  margin-top: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+.blog-post .blog-main .blog-quote, .blog-post .blog-main span {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #1a9395;
+}
+
+.blog-post #search {
+  padding: 15px;
+  width: 100%;
+}
+
+.blog-post .post-title {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-top: 80px;
+}
+
+.blog-post .post-caption-link {
+  text-decoration: none;
+  color: #1a9395;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.hero-contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/hero-contact.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 70px;
+  background-attachment: fixed;
+}
+
+.contacts {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .contact-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 45px;
+  }
+}
+
+.contacts .contact-content-wrapper .contact-content-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contacts .contact-title {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .contact-title {
+    text-align: left;
+    font-size: 50px;
+  }
+}
+
+.contacts .contact-caption {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .contact-caption {
+    text-align: left;
+    width: 73%;
+  }
+}
+
+.contacts .contact-icon-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts .contactform-wrap {
+  background-color: rgba(250, 250, 250, 0.518);
+  min-height: inherit;
+  padding: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.contacts .contactform-wrap .input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.contacts .contactform-wrap .input-wrapper .input-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+.contacts .contactform-wrap .input-wrapper, .contacts .contactform-wrap input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contacts .contactform-wrap .input-wrapper-2, .contacts .contactform-wrap input {
+  margin-bottom: 17px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contacts .contact-icon-item {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .contact-icon-item {
+    line-height: 1;
+    text-align: left;
+  }
+}
+
+.contacts .contact-icon-item .contact-icon {
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 32px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.contacts .contact-icon-item .contact-icon-title {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contacts .textarea-contact {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+.contacts .contactform-wrap {
+  background-image: none;
+}
+
+.contacts select {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid gray;
+  margin-bottom: 18px;
+}
+
+.contacts optgroup {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .listings .list-wrapper {
@@ -842,8 +1587,8 @@ header .hero-wrapper {
 }
 
 .site__footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../images/hero-bg-one.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-bg-one.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/taf-one.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/taf-one.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -852,7 +1597,7 @@ header .hero-wrapper {
 
 .site__footer .footer-icons {
   background-color: darkgray;
-  padding: 10px 10px;
+  padding: 5px 5px;
   border-radius: 30px;
   margin-top: 103px;
   color: #fff;
@@ -872,11 +1617,17 @@ header .hero-wrapper {
 .site__footer .site__footer-copyright::after {
   content: "";
   position: absolute;
-  background-color: darkcyan;
+  background-color: #729393;
   width: 100%;
   height: 2px;
-  bottom: 60px;
+  bottom: 56px;
   left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .site__footer .site__footer-copyright::after {
+    bottom: 36px;
+  }
 }
 
 .site__footer .widget__gettelephone {
