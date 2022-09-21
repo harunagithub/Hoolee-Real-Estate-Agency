@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 360px;
     margin-bottom: 70px;
     background-attachment: fixed;
 }
@@ -139,11 +139,13 @@
         padding: 8px 0;
         font-size: 13px;
         font-family: $fontFamily2;
+        // background-color: #f7f7f7;
     }
-    .input-wrapper-2, input{
+   wrapper-2, input, select{
         margin-bottom: 17px;
         font-size: 13px;
         font-family: $fontFamily2;
+        // background-color: #f7f7f7;
     }
 
 }

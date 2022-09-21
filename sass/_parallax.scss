@@ -51,13 +51,15 @@
   }
 }
 
-.form-paralax-container input {
+.form-paralax-container input, textarea{
   display: block;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid gray;
   width: 100%;
-  background-color: #fff5f5;
+  background-color: #f7f7f7;
+  font-family: $fontFamily2;
+  font-size: 13px;
 }
 
 .form-paralax-container .input-wrapper {

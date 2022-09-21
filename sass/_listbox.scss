@@ -55,6 +55,12 @@
                 padding: 12px;
             }
 
+            .list-box-image {
+                height: 240px;
+                width: 100%;
+                object-fit: cover;
+              }
+
             .list-box-title{
                 text-align: left;
                 font-size: 19px;

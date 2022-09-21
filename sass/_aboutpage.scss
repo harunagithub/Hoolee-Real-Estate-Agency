@@ -4,31 +4,37 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 360px;
     margin-bottom: 70px;
     background-attachment: fixed;
 }
 
 .about-contents{
     .aboutpage-title {
+      @media screen and (min-width: 768px) {
+        font-size: 50px;
+      }
+      @media screen and (min-width: 1366px) {
+        font-size: 65px;
+      }
         text-align: center;
         font-size: 35px;
         line-height: 1;
         font-family: $fontFamily;
-        display: block;
-        position: relative;
+        // display: block;
+        // position: relative;
         margin-bottom: 90px;
 
-        &::after {
-            content: "";
-            position: absolute;
-            background-color: grey;
-            width: 50px;
-            height: 2px;
-            bottom: -17px;
-            left: 100px;
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     background-color: grey;
+        //     width: 50px;
+        //     height: 2px;
+        //     bottom: -17px;
+        //     left: 100px;
             
-        }
+        // }
 }
 }
 

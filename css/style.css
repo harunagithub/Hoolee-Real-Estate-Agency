@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 360px;
   margin-bottom: 70px;
   background-attachment: fixed;
 }
@@ -202,12 +202,27 @@ ul {
   margin: 0;
 }
 
-header .header-telephone {
+.telephone-section {
+  position: relative;
+  display: block;
+}
+
+.telephone-section::after {
+  content: "";
+  position: absolute;
+  background-color: lightblue;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+
+.telephone-section .header-telephone {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header .header-telephone {
+  .telephone-section .header-telephone {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,22 +232,27 @@ header .header-telephone {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
-  }
-  header .header-telephone::after {
-    content: "";
-    position: absolute;
-    background-color: grey;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
   }
 }
 
+.telephone-section .header-telephone-link {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.telephone-section .header-telephone-title {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Montserrat", sans-serif;
+}
+
 header .logo {
-  width: 100%;
-  max-width: 142px;
+  width: 150px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .hero-logos {
@@ -406,16 +426,72 @@ header .hero-wrapper {
   display: -ms-flexbox;
   display: flex;
   gap: 36px;
+  position: relative;
 }
 
 .nav .nav-list .nav-item {
   list-style-type: none;
+  position: relative;
+  z-index: 2;
+}
+
+.nav .nav-list .nav-item:hover .dropdown-menu {
+  display: block;
 }
 
 .nav .nav-list .nav-link {
   text-decoration: none;
   color: #000;
-  font-weight: 900;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav .nav-list .nav-link {
+    font-size: 18px;
+  }
+}
+
+.nav .nav-list .nav-link:hover {
+  color: #1a9395;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.nav .dropdown-menu {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+}
+
+.nav .dropdown-menu .dropdown-list {
+  display: block;
+  margin: 10px;
+}
+
+.nav .dropdown-menu .dropdown-item {
+  width: 150px;
+  padding: 10px;
+}
+
+.nav .dropdown-menu .dropdown-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Yeseva One", cursive;
+  line-height: 1;
+}
+
+.nav .dropdown-menu .dropdown-link:hover {
+  color: #1a9395;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border: 1px dotted #1a9395;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -481,7 +557,7 @@ header .hero-wrapper {
 @media screen and (min-width: 1024px) {
   .about {
     background-position: 466px 0;
-    height: 136vh;
+    height: 114vh;
   }
 }
 
@@ -763,13 +839,15 @@ header .hero-wrapper {
   margin-top: 30px;
 }
 
-.form-paralax .form-paralax-container input {
+.form-paralax .form-paralax-container input, .form-paralax textarea {
   display: block;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid gray;
   width: 100%;
-  background-color: #fff5f5;
+  background-color: #f7f7f7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
 }
 
 .form-paralax .form-paralax-container .input-wrapper {
@@ -892,7 +970,7 @@ header .hero-wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 360px;
   margin-bottom: 70px;
   background-attachment: fixed;
 }
@@ -903,7 +981,7 @@ header .hero-wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 360px;
   margin-bottom: 70px;
   background-attachment: fixed;
 }
@@ -914,7 +992,7 @@ header .hero-wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 360px;
   margin-bottom: 70px;
   background-attachment: fixed;
 }
@@ -932,7 +1010,7 @@ header .hero-wrapper {
   }
 }
 
-.neighborhood-list .neihborhood-item {
+.neighborhood-list .neighborhood-item {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/listing.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/listing.jpg");
   background-position: center;
@@ -946,7 +1024,7 @@ header .hero-wrapper {
           flex: 1;
 }
 
-.neighborhood-list .neihborhood-item:hover {
+.neighborhood-list .neighborhood-item:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/listing.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/listing.jpg");
   cursor: pointer;
@@ -972,7 +1050,7 @@ header .hero-wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 360px;
   margin-bottom: 70px;
   background-attachment: fixed;
 }
@@ -982,19 +1060,19 @@ header .hero-wrapper {
   font-size: 35px;
   line-height: 1;
   font-family: "Yeseva One", cursive;
-  display: block;
-  position: relative;
   margin-bottom: 90px;
 }
 
-.about-contents .aboutpage-title::after {
-  content: "";
-  position: absolute;
-  background-color: grey;
-  width: 50px;
-  height: 2px;
-  bottom: -17px;
-  left: 100px;
+@media screen and (min-width: 768px) {
+  .about-contents .aboutpage-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .about-contents .aboutpage-title {
+    font-size: 65px;
+  }
 }
 
 .unparalleled {
@@ -1346,7 +1424,7 @@ header .hero-wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 360px;
   margin-bottom: 70px;
   background-attachment: fixed;
 }
@@ -1494,7 +1572,7 @@ header .hero-wrapper {
   font-family: "Montserrat", sans-serif;
 }
 
-.contacts .contactform-wrap .input-wrapper-2, .contacts .contactform-wrap input {
+.contacts .contactform-wrap wrapper-2, .contacts .contactform-wrap input, .contacts .contactform-wrap select {
   margin-bottom: 17px;
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
@@ -1594,6 +1672,13 @@ header .hero-wrapper {
   .listings .listing-inner-wrapper .list-box {
     padding: 12px;
   }
+}
+
+.listings .listing-inner-wrapper .list-box .list-box-image {
+  height: 240px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .listings .listing-inner-wrapper .list-box .list-box-title {

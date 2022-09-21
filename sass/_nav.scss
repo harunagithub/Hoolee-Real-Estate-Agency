@@ -8,17 +8,72 @@
     .nav-list {
         display: flex;
         gap: 36px;
+        position: relative;
 
         .nav-item {
             list-style-type: none;
+            position: relative;
+            z-index: 2;
+
+            &:hover {
+                .dropdown-menu{
+                display: block;
+                
+            }}
         }
 
         .nav-link {
             text-decoration: none;
             color: #000;
-            font-weight: 900;
+            font-weight: 400;
+            font-family: $fontFamily;
+
+            @media screen and (min-width: 1024px) {
+                font-size: 18px;
+            }
+
+            &:hover{
+                color: $Color3;
+                transition: 0.7s;
+            }
+
         }
     }
-   
+
+   .dropdown-menu{
+        display: none; 
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: $background1;
+
+    .dropdown-list{
+        display: block;
+        margin: 10px;
+        
+    }
+    .dropdown-item{
+        width: 150px;
+        padding: 10px;
+    }
+
+    .dropdown-link {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: $fontFamily;
+        line-height: 1;
+
+        &:hover{
+            color: $Color3;
+            transition: 0.7s;
+            border: 1px dotted $Color3;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+      }
+   }
+
     
 }
