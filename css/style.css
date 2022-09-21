@@ -84,6 +84,13 @@
   }
 }
 
+.exclusive-img {
+  height: 240px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .exclusive-item-title {
   font-size: 23px;
   line-height: 1.2;
@@ -1062,6 +1069,8 @@ header .hero-wrapper {
   font-size: 35px;
   line-height: 1;
   font-family: "Yeseva One", cursive;
+  display: block;
+  position: relative;
   margin-bottom: 90px;
 }
 
@@ -1075,6 +1084,16 @@ header .hero-wrapper {
   .about-contents .aboutpage-title {
     font-size: 65px;
   }
+}
+
+.about-contents .aboutpage-title::after {
+  content: "";
+  position: absolute;
+  background-color: grey;
+  width: 50px;
+  height: 2px;
+  bottom: -17px;
+  left: 100px;
 }
 
 .unparalleled {
@@ -1240,14 +1259,14 @@ header .hero-wrapper {
 
 @media screen and (min-width: 1024px) {
   .records .record-sales-title {
-    font-size: 65px;
+    font-size: 60px;
   }
 }
 
 .records .record-sales-title::after {
   content: "";
   position: absolute;
-  background-color: #1a9395;
+  background-color: #f4e0e0;
   width: 100%;
   height: 1px;
   bottom: -60px;
@@ -1292,7 +1311,7 @@ header .hero-wrapper {
 }
 
 .establishes .estbalished-caption {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   line-height: 2;
